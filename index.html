@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>koubéhtéo</title>
+  </head>
+  <body>
+    <div class="form">
+      <div class="formdiv">
+        <p>entrez le nom de votre commune ou son code postal</p>
+        <input type="text" id="localisation" required minlength="5">
+      </div>
+      <div class="formdiv">
+        <button id="sub">Chercher</button>
+      </div>
+      <div id="villeDisplay">
+
+      </div>
+    </div>
+    
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/search.js"></script>
+  </body>
+</html>
