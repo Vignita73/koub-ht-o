@@ -2,6 +2,10 @@ const submit = document.querySelector("#sub");
 const localisation = document.querySelector("#localisation");
 const villeDisplay = document.querySelector("#villeDisplay");
 
+if (localStorage.length > 0) {
+    window.location.href = "./ville.html?villeName=" + localStorage.selectedVilleName + "&villeCp=" + localStorage.selectedVilleCp;
+}
+
 submit.addEventListener("click",function(){
     console.log("location =" + localisation.value);
     fetch("https://api.meteo-concept.com/api/location/cities?token=1aebfdf3069836a71bd533a70c5e08e8c3a72434d5857e61bb9400233d3e718e&search=" + localisation.value)
@@ -23,4 +27,4 @@ submit.addEventListener("click",function(){
         }
     })
     .catch(error => alert("Erreur : " + error));
-})
+});
