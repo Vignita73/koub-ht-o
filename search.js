@@ -3,7 +3,7 @@ const localisation = document.querySelector("#localisation");
 const villeDisplay = document.querySelector("#villeDisplay");
 
 if (localStorage.length > 0) {
-    window.location.href = "./ville.html?villeName=" + localStorage.selectedVilleName + "&villeCp=" + localStorage.selectedVilleCp;
+    window.location.href = "./ville.html?villeInsee=" + localStorage.selectedVilleInsee;
 }
 
 submit.addEventListener("click",function(){
@@ -20,7 +20,7 @@ submit.addEventListener("click",function(){
             villeName.innerText = data.cities[i].name + ' ( ' + data.cities[i].cp + ' )';
             villeDiv.appendChild(villeName);
             const villeBtn = document.createElement('a');
-            villeBtn.href = "./ville.html?villeName=" + data.cities[i].name + "&villeCp=" + data.cities[i].cp;
+            villeBtn.href = "./ville.html?villeInsee=" + data.cities[i].insee;
             villeBtn.innerHTML = "<button>"+"selectionner"+"</button>"
             villeDiv.appendChild(villeBtn);
             villeDisplay.appendChild(villeDiv);

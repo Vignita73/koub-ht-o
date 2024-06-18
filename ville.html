@@ -7,8 +7,60 @@
     <title>koubéhtéo</title>
   </head>
   <body>
-    <h1 id="villeNameDisplay">Ville</h1>
-    <h2 id="villeTemp">Température</h2>
+    <div id="villeDisplay" class="divjo">
+      <h1 id="cityName"></h1><p id="cityCp"></p>
+      <p id="cityLocation"></p>
+      <h2 id="cityTemp"></h2>
+      <p id="cityWeather"></p>
+    </div>
+    <h2>Prévision météo pour les heures à venir</h2>
+    <div id="forecastGrid" class="gridjo">
+      <h2 class="forecastHour"></h3>
+      <h2 class="forecastHour"></h2>
+      <h2 class="forecastHour"></h2>
+      <h2 class="forecastHour"></h2>
+      <div class="forecastDisplay"><h2 class="forecastDisplay_temp"></h2><p class="forecastDisplay_weather"></p><h3 class="forecastDisplay_proba"></h3></div>
+      <div class="forecastDisplay"><h2 class="forecastDisplay_temp"></h2><p class="forecastDisplay_weather"></p><h3 class="forecastDisplay_proba"></h3></div>
+      <div class="forecastDisplay"><h2 class="forecastDisplay_temp"></h2><p class="forecastDisplay_weather"></p><h3 class="forecastDisplay_proba"></h3></div>
+      <div class="forecastDisplay"><h2 class="forecastDisplay_temp"></h2><p class="forecastDisplay_weather"></p><h3 class="forecastDisplay_proba"></h3></div>
+    </div>
+    <h2>Stats vent</h2>
+    <div id="windGrid"  class="gridjo">
+      <h2 class="windHour"></h2>
+      <h2 class="windHour"></h2>
+      <h2 class="windHour"></h2>
+      <h2 class="windHour"></h2>
+      <div class="windDisplay"><p class="windDisplay_dir"></p><h3 class="windDisplay_speed"></h3></div>
+      <div class="windDisplay"><p class="windDisplay_dir"></p><h3 class="windDisplay_speed"></h3></div>
+      <div class="windDisplay"><p class="windDisplay_dir"></p><h3 class="windDisplay_speed"></h3></div>
+      <div class="windDisplay"><p class="windDisplay_dir"></p><h3 class="windDisplay_speed"></h3></div>
+    </div>
+    <h2>stats journée</h2>
+    <div id="dayGrid" class="gridjo">
+      <div id="dayDuration"></div>
+      <div id="daySet"></div>
+      <div id="dayMoon"></div>
+    </div>
+    <h2>Prévision sur les 10 prochains jours</h2>
+    <div id="weekDiv" class="divjo">
+      <div class="weekDisplay"><h2 class="weekDisplay_date"></h2><p class="weekDisplay_weather"></p><h3 class="weekDisplay_temp"></h3></div>
+      <div class="weekDisplay"><h2 class="weekDisplay_date"></h2><p class="weekDisplay_weather"></p><h3 class="weekDisplay_temp"></h3></div>
+      <div class="weekDisplay"><h2 class="weekDisplay_date"></h2><p class="weekDisplay_weather"></p><h3 class="weekDisplay_temp"></h3></div>
+      <div class="weekDisplay"><h2 class="weekDisplay_date"></h2><p class="weekDisplay_weather"></p><h3 class="weekDisplay_temp"></h3></div>
+      <div class="weekDisplay"><h2 class="weekDisplay_date"></h2><p class="weekDisplay_weather"></p><h3 class="weekDisplay_temp"></h3></div>
+      <div class="weekDisplay"><h2 class="weekDisplay_date"></h2><p class="weekDisplay_weather"></p><h3 class="weekDisplay_temp"></h3></div>
+      <div class="weekDisplay"><h2 class="weekDisplay_date"></h2><p class="weekDisplay_weather"></p><h3 class="weekDisplay_temp"></h3></div>
+      <div class="weekDisplay"><h2 class="weekDisplay_date"></h2><p class="weekDisplay_weather"></p><h3 class="weekDisplay_temp"></h3></div>
+      <div class="weekDisplay"><h2 class="weekDisplay_date"></h2><p class="weekDisplay_weather"></p><h3 class="weekDisplay_temp"></h3></div>
+      <div class="weekDisplay"><h2 class="weekDisplay_date"></h2><p class="weekDisplay_weather"></p><h3 class="weekDisplay_temp"></h3></div>
+    </div>
+    <h2>dateImportante</h2>
+    <form>
+      <input type="date" id="dateImportante">
+    </form>
+    <div id="importanteDiv" class="divjo">
+
+    </div>
     <button id="storageClear">changer de ville</button>
     
     <script type="module" src="/main.js"></script>

@@ -1,0 +1,25 @@
+{
+  "name": "Koubéhtéo",
+  "short_name": "Koubéhtéo",
+  "description": "Météo envoyant des notification si il ne fait pas beau lors d'un jour important",
+  "start_url": "/?utm_source=homescreen",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#6d6192",
+  "theme_color": "#0078d7",
+  "icons": [
+    {
+      "src":"/vite.svg",
+      "sizes": "72x72",
+      "type": "image/svg+xml"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://koubehteo.netlify.app"
+    }
+  ],
+  "prefer_related_applications": true
+}
