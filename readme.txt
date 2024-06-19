@@ -1,0 +1,5 @@
+Koubéhtéo est une application de météo utilisant l'api météo concepte présentent un service limité gratuit.
+Le concept de Koubéhtéo consiste à choisire une ville via son nom ou son code postal afin de la définir comme ville à suivre, une fois suivi,
+l'appli affiche des information météorologique sur des tranches trihoraire, allan de la température aux prévisions météos tout en passant par le temp de soleil.
+L'utilisateur à le choix de définir des jours important, si l'application détecte un mauvais à la date importante (10 jours en avance) elle envoies une notification.
+(Mal heureusement l'application n'est pas terminer, toute la parti api fonctionne, mais le designe et le css ne sont pas terminé et encore peu intuitif, la parti notifaction, bien que la création de jours importants fonctionne, ne fonctionne pas)
