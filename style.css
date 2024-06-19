@@ -17,6 +17,7 @@ body{
 }
 .title{
   color: whitesmoke;
+  margin-left: 5vw;
 }
 #forecastGrid{
   display: grid;

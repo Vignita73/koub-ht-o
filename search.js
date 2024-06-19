@@ -23,6 +23,7 @@ submit.addEventListener("click",function(){
             villeBtn.href = "./ville.html?villeInsee=" + data.cities[i].insee;
             villeBtn.innerHTML = "<button>"+"selectionner"+"</button>"
             villeDiv.appendChild(villeBtn);
+            villeDisplay.classList.add('divjo');
             villeDisplay.appendChild(villeDiv);
         }
     })
