@@ -15,6 +15,9 @@ body{
   border-radius: 15px;
   padding: 1vw;
 }
+.title{
+  color: whitesmoke;
+}
 #forecastGrid{
   display: grid;
   grid-template-columns: auto auto auto auto;
